@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20220503T100000
+DTEND;TZID=America/New_York:20220503T103000
+DTSTAMP:20220429T170714Z
+ORGANIZER;CN=dea@regdesk.co:mailto:dea@regdesk.co
+UID:3l0akal1ehdnuhd5hftri53jla_R20220222T140000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=dea@regdesk.co;X-NUM-GUESTS=0:mailto:dea@regdesk.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=oleg@regdesk.co;X-NUM-GUESTS=0:mailto:oleg@regdesk.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=goran@regdesk.co;X-NUM-GUESTS=0:mailto:goran@regdesk.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=igor.stolbtsov@regdesk.co;X-NUM-GUESTS=0:mailto:igor.stolbtsov@regd
+ esk.co
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=Artem Surmilo;X-NUM-GUESTS=0:mailto:artem.surmilo@regdesk.co
+X-MICROSOFT-CDO-OWNERAPPTID:2016474379
+RECURRENCE-ID;TZID=America/New_York:20220503T090000
+CREATED:20220131T204035Z
+DESCRIPTION:RegDesk is inviting you to a scheduled Zoom meeting.\nTopic: QA
+  Weekly Meeting\nTime: This is a recurring meeting Meet anytime\nJoin Zoom 
+ Meeting\nhttps://us02web.zoom.us/j/83337627876?pwd=NmhqY01Udi9PNHFBTHFSUTZ0
+ UkpPdz09\nMeeting ID: 833 3762 7876\nPasscode: 544215\nOne tap mobile\n+125
+ 32158782\,\,83337627876# US (Tacoma)\n+13017158592\,\,83337627876# US (Wash
+ ington DC)\nDial by your location\n        +1 253 215 8782 US (Tacoma)\n   
+      +1 301 715 8592 US (Washington DC)\n        +1 312 626 6799 US (Chicag
+ o)\n        +1 346 248 7799 US (Houston)\n        +1 646 558 8656 US (New Y
+ ork)\n        +1 669 900 6833 US (San Jose)\nMeeting ID: 833 3762 7876\nFin
+ d your local number: https://us02web.zoom.us/u/kbwtO6W4pk\n\n-::~:~::~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\n
+ Do not edit this section of the description.\n\nView your event at https://
+ calendar.google.com/calendar/event?action=VIEW&eid=M2wwYWthbDFlaGRudWhkNWhm
+ dHJpNTNqbGFfMjAyMjA1MDNUMTMwMDAwWiBvbGVnQHJlZ2Rlc2suY28&tok=MTQjZGVhQHJlZ2R
+ lc2suY28xNjljZDg3MTJiNWUxYjE0OWM3OWJmZTJhMThjMzJlNzlkY2JhMDRm&ctz=America%2
+ FNew_York&hl=en&es=1.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220429T170713Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:QA Weekly Meeting
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
