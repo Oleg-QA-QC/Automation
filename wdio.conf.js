@@ -32,11 +32,11 @@ exports.config = {
     //   "./test/specs/4.Permissions.js",
     //   "./test/specs/5.AuditTrail.js"
     // ],
-    "./test/specs/*.js",
+    // "./test/specs/*.js",
     // './test/specs/1.Login.js',
     // './test/specs/2.NotLogin.js'
     // './test/specs/3.Approve DCT.js'
-    // './test/specs/4.Permissions.js'
+    './test/specs/4.Permissions.js'
     // './test/specs/5.AuditTrail.js'
   ],
   // Patterns to exclude.
