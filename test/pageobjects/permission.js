@@ -1,5 +1,4 @@
 class Permission {
-
   get permissionContainer() {
     return $(
       ".ant-modal-body .ant-form.ant-form-horizontal.form___212u8 > :nth-child(5)"
@@ -50,7 +49,7 @@ class Permission {
   get doneBtn() {
     return $(".ant-btn.ant-btn-primary");
   }
-  
+
   // Share with sub user functionality
   async shareWithUser(subUserName) {
     await browser.pause(2000);
@@ -125,9 +124,7 @@ class Permission {
 
     for (let i = 0; i < (await this.permissionList.length); i++) {
       let textOfPermission = await this.permissionList[i]
-        .$(
-          ".ant-card-head .ant-card-head-title"
-        )
+        .$(".ant-card-head .ant-card-head-title")
         .getText();
       const promise = await Promise.resolve(await textOfPermission);
       let selector = await $$(".ant-card.ant-card-bordered.ant-card-small");
@@ -145,20 +142,12 @@ class Permission {
           const subText = await subselector[a].getText();
           const subPermision = await Promise.resolve(await subText);
 
-          if (await subPermision.includes(subtext1)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext2)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext3)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext4)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext5)) {
-            await switchSubBtn.click();
+          switch(await subPermision) {
+            case subtext1: await switchSubBtn.click();
+            case subtext2: await switchSubBtn.click();
+            case subtext3: await switchSubBtn.click();
+            case subtext4: await switchSubBtn.click();
+            case subtext5: await switchSubBtn.click();
           }
         }
       }
@@ -190,20 +179,13 @@ class Permission {
           let switchSubBtn = await subselector[a].$('[role="switch"]');
           const subText = await subselector[a].getText();
           const subPermision = await Promise.resolve(await subText);
-          if (await subPermision.includes(subtext1)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext2)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext3)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext4)) {
-            await switchSubBtn.click();
-          }
-          if (await subPermision.includes(subtext5)) {
-            await switchSubBtn.click();
+      
+          switch(await subPermision) {
+            case subtext1: await switchSubBtn.click();
+            case subtext2: await switchSubBtn.click();
+            case subtext3: await switchSubBtn.click();
+            case subtext4: await switchSubBtn.click();
+            case subtext5: await switchSubBtn.click();
           }
         }
       }
